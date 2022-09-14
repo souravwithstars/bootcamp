@@ -8,26 +8,20 @@ class SquareTest {
   //  TEST for Area of Square
   @Test
   void shouldFindAreaOfGivenSquare() {
-    Square square = new Square(10);
+    Rectangle square = Rectangle.createSquare(10);
     assertEquals(100, square.area());
-  }
 
-  @Test
-  void shouldFindAreaWithSidesOfDecimalValue() {
-    Square square = new Square(10.5);
-    assertEquals(110.25, square.area());
+    Rectangle square2 = Rectangle.createSquare(10.5);
+    assertEquals(110.25, square2.area());
   }
 
   //  TEST for Perimeter of Square
   @Test
   void shouldFindPerimeterOfGivenSquare() {
-    Square square = new Square(10);
+    Rectangle square = Rectangle.createSquare(10);
     assertEquals(40, square.perimeter());
-  }
 
-  @Test
-  void shouldFindPerimeterWithSidesOfDecimalValue() {
-    Square square = new Square(10.5);
-    assertEquals(42, square.perimeter());
+    Rectangle square2 = Rectangle.createSquare(10.5);
+    assertEquals(42, square2.perimeter());
   }
 }

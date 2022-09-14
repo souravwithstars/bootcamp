@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +56,26 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="bootcamp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleTest.shouldFindPerimeterOfGivenRectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.RectangleTest" />
+      <option name="METHOD_NAME" value="shouldFindPerimeterOfGivenRectangle" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,29 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest.shouldFindPerimeterWithSidesOfDecimalValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.shapes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.SquareTest" />
-      <option name="METHOD_NAME" value="shouldFindPerimeterWithSidesOfDecimalValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RectangleTest.shouldFindPerimeterOfGivenRectangle" />
+        <item itemvalue="JUnit.SquareTest.shouldFindPerimeterOfGivenSquare" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.SquareTest.shouldFindAreaOfGivenSquare" />
         <item itemvalue="JUnit.SquareTest" />
-        <item itemvalue="JUnit.SquareTest.shouldFindPerimeterWithSidesOfDecimalValue" />
-        <item itemvalue="JUnit.SquareTest.shouldFindPerimeterOfGivenSquare" />
       </list>
     </recent_temporary>
   </component>
