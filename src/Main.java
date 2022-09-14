@@ -5,5 +5,6 @@ public class Main {
 
     Rectangle rectangle = new Rectangle(10, 20);
     System.out.println(rectangle.area());
+    System.out.println(rectangle.perimeter());
   }
 }
