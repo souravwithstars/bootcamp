@@ -1,17 +1,25 @@
 package com.tw.step8.toss;
 
 public class Coins {
-  private final FareCoin[] fareCoins;
+  private final int count;
 
-  public Coins(FareCoin[] fareCoins) {
-    this.fareCoins = fareCoins;
+  public Coins(int count) {
+    this.count = count;
   }
 
   public double chanceOfAllTails() {
-    double chance = 1;
-    for (FareCoin fareCoin : fareCoins) {
-      chance = chance * fareCoin.chanceOfTails();
-    }
+    int noOfCoins = getNoOfCoins();
+    double chance = Math.pow(0.5, noOfCoins);
     return chance;
+  }
+
+  public double chanceOfAtleastOneTails() {
+    int noOfCoins = getNoOfCoins();
+    double chance = 1 - Math.pow(0.5, noOfCoins);
+    return chance;
+  }
+
+  private int getNoOfCoins() {
+    return count;
   }
 }
