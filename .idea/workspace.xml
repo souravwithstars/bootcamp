@@ -64,7 +64,7 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CoinsTest">
     <configuration name="CoinsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -146,10 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoinsTest" />
         <item itemvalue="JUnit.CoinsTest.ShouldGiveChanceOfGettingAtLeastOneTails" />
         <item itemvalue="JUnit.CoinsTest.ShouldGiveChanceOfGettingTailsForOneCoin" />
         <item itemvalue="JUnit.CoinsTest.ShouldGiveChanceOfNoTailsForOneCoin" />
-        <item itemvalue="JUnit.CoinsTest" />
         <item itemvalue="JUnit.RectangleTest.shouldFindPerimeterOfGivenRectangle" />
       </list>
     </recent_temporary>
