@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/toss/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/toss/Coins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/toss/FareCoin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/toss/CoinsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/toss/CoinsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +64,7 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CoinsTest.ShouldGiveChanceOfGettingTailsForOneCoin">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="bootcamp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="CoinsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -84,6 +80,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CoinsTest.ShouldGiveChanceOfGettingAtLeastOneTails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.toss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.toss" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.toss.CoinsTest" />
+      <option name="METHOD_NAME" value="ShouldGiveChanceOfGettingAtLeastOneTails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoinsTest.ShouldGiveChanceOfGettingTailsForOneCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -95,6 +107,22 @@
       <option name="PACKAGE_NAME" value="com.tw.step8.toss" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.toss.CoinsTest" />
       <option name="METHOD_NAME" value="ShouldGiveChanceOfGettingTailsForOneCoin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoinsTest.ShouldGiveChanceOfNoTailsForOneCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.toss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.toss" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.toss.CoinsTest" />
+      <option name="METHOD_NAME" value="ShouldGiveChanceOfNoTailsForOneCoin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,29 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest.shouldFindPerimeterOfGivenSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.shapes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.SquareTest" />
-      <option name="METHOD_NAME" value="shouldFindPerimeterOfGivenSquare" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoinsTest.ShouldGiveChanceOfGettingAtLeastOneTails" />
         <item itemvalue="JUnit.CoinsTest.ShouldGiveChanceOfGettingTailsForOneCoin" />
+        <item itemvalue="JUnit.CoinsTest.ShouldGiveChanceOfNoTailsForOneCoin" />
         <item itemvalue="JUnit.CoinsTest" />
         <item itemvalue="JUnit.RectangleTest.shouldFindPerimeterOfGivenRectangle" />
-        <item itemvalue="JUnit.SquareTest.shouldFindPerimeterOfGivenSquare" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

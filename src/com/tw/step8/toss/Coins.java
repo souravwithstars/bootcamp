@@ -13,7 +13,7 @@ public class Coins {
     return chance;
   }
 
-  public double chanceOfAtleastOneTails() {
+  public double chanceOfAtLeastOneTails() {
     int noOfCoins = getNoOfCoins();
     double chance = 1 - Math.pow(0.5, noOfCoins);
     return chance;
@@ -21,5 +21,9 @@ public class Coins {
 
   private int getNoOfCoins() {
     return count;
+  }
+
+  public double chanceOfNoTails() {
+    return 1 - chanceOfAtLeastOneTails();
   }
 }
