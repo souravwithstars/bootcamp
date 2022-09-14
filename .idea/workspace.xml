@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/chance/Chance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/chance/InvalidProbability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/chance/ChanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/toss/Coins.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/toss/CoinsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/chance/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/chance/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/chance/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/chance/ChanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
       <recent name="com.tw.step8.toss" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tw.step8.chance" />
       <recent name="com.tw.step8.toss" />
       <recent name="com.tw.step8.shapes" />
     </key>
@@ -75,7 +73,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.toss" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -93,22 +91,6 @@
       <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
       <option name="METHOD_NAME" value="ShouldNotRepresentAChance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChanceTest.ShouldNotRepresentChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.chance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="ShouldNotRepresentChance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,13 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChanceTest.combineChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.chance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
+      <option name="METHOD_NAME" value="combineChance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ChanceTest.ShouldNotRepresentAChance" />
-        <item itemvalue="JUnit.ChanceTest.ShouldNotRepresentChance" />
         <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.ShouldRepresentChanceOfGettingTails" />
         <item itemvalue="JUnit.ChanceTest.ShouldRepresentChanceOfNotGettingTails" />
+        <item itemvalue="JUnit.ChanceTest.combineChance" />
       </list>
     </recent_temporary>
   </component>

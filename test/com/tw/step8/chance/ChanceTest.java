@@ -8,15 +8,16 @@ class ChanceTest {
 
   @Test
   void ShouldRepresentChanceOfGettingTails() throws InvalidProbability {
-    Chance chance = Chance.createChance(0.12);
+    Chance chance = Chance.createChance(0.5);
+    Chance chance2 = Chance.createChance(0.5);
 
-    assertEquals(0.12, chance.getProbability());
+    assertTrue(chance.equals(chance2));
   }
 
   @Test
   void ShouldNotRepresentAChance() {
     try {
-      Chance chance = Chance.createChance(2);
+      Chance chance = Chance.createChance(.2);
     } catch (InvalidProbability e) {
       assertEquals("Probability should be between 0-1", e.getMessage());
     }
@@ -24,9 +25,18 @@ class ChanceTest {
 
   @Test
   void ShouldRepresentChanceOfNotGettingTails() throws InvalidProbability {
-    Chance chance1 = Chance.createChance(0.12);
-    Chance chance2 = Chance.createChance(0.88);
+    Chance chance1 = Chance.createChance(0.4);
+    Chance chance2 = Chance.createChance(0.6);
 
-    assertEquals(chance2.getProbability(), chance1.notAChance());
+    assertTrue(chance2.equals(chance1.notAChance()));
+  }
+
+  @Test
+  void combineChance() throws InvalidProbability {
+    Chance chance1 = Chance.createChance(0.5);
+    Chance chance2 = Chance.createChance(0.5);
+
+    Chance expected = Chance.createChance(0.25);
+    assertTrue(expected.equals(chance1.combineChance(chance2)));
   }
 }

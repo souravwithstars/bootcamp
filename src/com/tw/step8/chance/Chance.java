@@ -1,5 +1,7 @@
 package com.tw.step8.chance;
 
+import com.sun.org.apache.xerces.internal.dom.ChildNode;
+
 public class Chance {
   private final double probability;
 
@@ -8,18 +10,18 @@ public class Chance {
   }
 
   public static Chance createChance(double probability) throws InvalidProbability {
-    if(probability >= 1 || probability <= 0) {
+    if (probability >= 1 || probability <= 0) {
       throw new InvalidProbability("Probability should be between 0-1");
     }
     return new Chance(probability);
   }
 
-  public double getProbability() {
-    return this.probability;
+  public Chance combineChance(Chance anotherChance) {
+    return new Chance(probability * anotherChance.probability);
   }
 
-  public double notAChance() {
-    return 1 - probability;
+  public Chance notAChance() {
+    return new Chance(1 - probability);
   }
 
   @Override
