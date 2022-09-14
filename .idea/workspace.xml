@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/toss/Coins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/toss/FareCoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/toss/FareCoinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +16,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +43,7 @@
     "Repository.Attach.Sources": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true"
@@ -47,12 +51,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step8.toss" />
       <recent name="com.tw.step8.shapes" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tw.step8.toss" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tw.step8.toss" />
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
