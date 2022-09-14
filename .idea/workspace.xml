@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/shapes/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" afterDir="false" />
     </list>
@@ -56,7 +54,14 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SquareTest.shouldFindAreaOfGivenSquare">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="bootcamp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -122,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.SquareTest.shouldFindAreaOfGivenSquare" />
         <item itemvalue="JUnit.SquareTest" />
         <item itemvalue="JUnit.SquareTest.shouldFindPerimeterWithSidesOfDecimalValue" />
