@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootcamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bootcamp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
