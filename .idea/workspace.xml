@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bootcamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bootcamp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/shapes/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +55,79 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.tw.step8.shapes" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SquareTest.shouldFindAreaOfGivenSquare">
+    <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.SquareTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTest.shouldFindAreaOfGivenSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="shouldFindAreaOfGivenSquare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTest.shouldFindPerimeterOfGivenSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="shouldFindPerimeterOfGivenSquare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTest.shouldFindPerimeterWithSidesOfDecimalValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="shouldFindPerimeterWithSidesOfDecimalValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SquareTest.shouldFindAreaOfGivenSquare" />
+        <item itemvalue="JUnit.SquareTest" />
+        <item itemvalue="JUnit.SquareTest.shouldFindPerimeterWithSidesOfDecimalValue" />
+        <item itemvalue="JUnit.SquareTest.shouldFindPerimeterOfGivenSquare" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
