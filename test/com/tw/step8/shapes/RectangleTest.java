@@ -6,10 +6,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RectangleTest {
 
-  @org.junit.jupiter.api.Test
+  @Test
   void shouldFindAreaOfGivenRectangle() {
     Rectangle rectangle = new Rectangle(10, 20);
     assertEquals(200, rectangle.area());
+  }
+
+  @Test
+  void shouldFindAreaOfSidesWithDecimalValue() {
+    Rectangle rectangle = new Rectangle(10.5, 20.5);
+    assertEquals(215.25, rectangle.area());
   }
 
   @Test
@@ -19,7 +25,7 @@ class RectangleTest {
   }
 
   @Test
-  void shouldFindPerimeterSidesWithDoubleValue() {
+  void shouldFindPerimeterSidesWithDecimalValue() {
     Rectangle rectangle = new Rectangle(5.5, 10.25);
     assertEquals(31.5, rectangle.perimeter());
   }
