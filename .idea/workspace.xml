@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/chance/exception/InvalidProbabilityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/chance/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/chance/Chance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/chance/InvalidProbability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/chance/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/chance/ChanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -62,27 +60,13 @@
       <recent name="com.tw.step8.toss" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tw.step8.compare" />
       <recent name="com.tw.step8.chance" />
       <recent name="com.tw.step8.toss" />
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChanceTest.ShouldNotRepresentAChance">
-    <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.chance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MetricTest">
     <configuration name="ChanceTest.ShouldNotRepresentAChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -99,49 +83,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.ShouldRepresentChanceOfGettingTails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MetricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.chance.*" />
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="ShouldRepresentChanceOfGettingTails" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetricTest.shouldCompareGivenMetrics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="METHOD_NAME" value="shouldCompareGivenMetrics" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.ShouldRepresentChanceOfNotGettingTails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.chance.*" />
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="ShouldRepresentChanceOfNotGettingTails" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="METHOD_NAME" value="shouldReturnFalseIfBothMetricsAreNotEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.combineChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MetricTest.shouldReturnTrueIfBothMetricsAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.chance.*" />
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="combineChance" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrueIfBothMetricsAreEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MetricTest" />
+        <item itemvalue="JUnit.MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
+        <item itemvalue="JUnit.MetricTest.shouldReturnTrueIfBothMetricsAreEqual" />
+        <item itemvalue="JUnit.MetricTest.shouldCompareGivenMetrics" />
         <item itemvalue="JUnit.ChanceTest.ShouldNotRepresentAChance" />
-        <item itemvalue="JUnit.ChanceTest" />
-        <item itemvalue="JUnit.ChanceTest.ShouldRepresentChanceOfGettingTails" />
-        <item itemvalue="JUnit.ChanceTest.ShouldRepresentChanceOfNotGettingTails" />
-        <item itemvalue="JUnit.ChanceTest.combineChance" />
       </list>
     </recent_temporary>
   </component>
