@@ -1,5 +1,6 @@
 package com.tw.step8.chance;
 
+import com.tw.step8.chance.exception.InvalidProbabilityException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ChanceTest {
 
   @Test
-  void ShouldRepresentChanceOfGettingTails() throws InvalidProbability {
+  void ShouldRepresentChanceOfGettingTails() throws InvalidProbabilityException {
     Chance chance = Chance.createChance(0.5);
     Chance chance2 = Chance.createChance(0.5);
 
@@ -16,15 +17,11 @@ class ChanceTest {
 
   @Test
   void ShouldNotRepresentAChance() {
-    try {
-      Chance chance = Chance.createChance(.2);
-    } catch (InvalidProbability e) {
-      assertEquals("Probability should be between 0-1", e.getMessage());
-    }
+    assertThrows(InvalidProbabilityException.class, () -> Chance.createChance(2));
   }
 
   @Test
-  void ShouldRepresentChanceOfNotGettingTails() throws InvalidProbability {
+  void ShouldRepresentChanceOfNotGettingTails() throws InvalidProbabilityException {
     Chance chance1 = Chance.createChance(0.4);
     Chance chance2 = Chance.createChance(0.6);
 
@@ -32,7 +29,7 @@ class ChanceTest {
   }
 
   @Test
-  void combineChance() throws InvalidProbability {
+  void combineChance() throws InvalidProbabilityException {
     Chance chance1 = Chance.createChance(0.5);
     Chance chance2 = Chance.createChance(0.5);
 
