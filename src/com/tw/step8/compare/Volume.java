@@ -18,13 +18,13 @@ public class Volume {
     return new Volume(value, unitOfVolume);
   }
 
-  public int compare(Volume otherVolume) {
+  public Outcome compare(Volume otherVolume) {
     double inLitre = this.unit.value * this.value;
     double otherVolumeInLitre= otherVolume.unit.value * otherVolume.value;
 
-    if (inLitre == otherVolumeInLitre) return 0;
+    if (inLitre == otherVolumeInLitre) return Outcome.EQUAL;
 
-    return inLitre > otherVolumeInLitre? 1 : -1;
+    return inLitre > otherVolumeInLitre? Outcome.GREATERTHAN : Outcome.LESSERTHAN;
   }
 
   public Volume add(Volume otherVolume) throws InvalidStandardException {

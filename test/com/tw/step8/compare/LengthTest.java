@@ -7,33 +7,33 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LengthTest {
   @Test
-  void shouldReturnZeroIfBothAreSame() throws InvalidStandardException {
+  void shouldReturnOutcomeOfEqualIfBothAreSame() throws InvalidStandardException {
     Length feet = Length.create(1, UnitOfLength.FEET);
     Length inch = Length.create(12, UnitOfLength.INCH);
 
-    int comparisonResult = feet.compare(inch);
+    Outcome comparisonResult = feet.compare(inch);
 
-    assertEquals(0, comparisonResult);
+    assertEquals(Outcome.EQUAL, comparisonResult);
   }
 
   @Test
-  void shouldReturnOneIfFirstLengthIsGreater() throws InvalidStandardException {
+  void shouldReturnOutcomeOfGreaterThanIfFirstLengthIsGreater() throws InvalidStandardException {
     Length feet = Length.create(2, UnitOfLength.FEET);
     Length inch = Length.create(12, UnitOfLength.INCH);
 
-    int comparisonResult = feet.compare(inch);
+    Outcome comparisonResult = feet.compare(inch);
 
-    assertEquals(1, comparisonResult);
+    assertEquals(Outcome.GREATERTHAN, comparisonResult);
   }
 
   @Test
-  void shouldReturnMinusOneIfFirstLengthIsSmaller() throws InvalidStandardException {
+  void shouldReturnOutcomeOfLesserThanIfFirstLengthIsLesser() throws InvalidStandardException {
     Length feet = Length.create(1, UnitOfLength.FEET);
     Length inch = Length.create(13, UnitOfLength.INCH);
 
-    int comparisonResult = feet.compare(inch);
+    Outcome comparisonResult = feet.compare(inch);
 
-    assertEquals(-1, comparisonResult);
+    assertEquals(Outcome.LESSERTHAN, comparisonResult);
   }
 
   @Test

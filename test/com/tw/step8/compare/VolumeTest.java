@@ -8,33 +8,33 @@ import static org.junit.jupiter.api.Assertions.*;
 class VolumeTest {
 
   @Test
-  void shouldReturnZeroIfBothAreSame() throws InvalidStandardException {
+  void shouldReturnOutcomeOfEqualIfBothAreSame() throws InvalidStandardException {
     Volume gallon = Volume.create(1, UnitOfVolume.GALLON);
     Volume litre = Volume.create(3.178, UnitOfVolume.LITRE);
 
-    int comparisonResult = gallon.compare(litre);
+    Outcome comparisonResult = gallon.compare(litre);
 
-    assertEquals(0, comparisonResult);
+    assertEquals(Outcome.EQUAL, comparisonResult);
   }
 
   @Test
-  void shouldReturnOneIfFirstVolumeIsGreater() throws InvalidStandardException {
+  void shouldReturnOutcomeOfGreaterThanIfFirstVolumeIsGreater() throws InvalidStandardException {
     Volume gallon = Volume.create(2, UnitOfVolume.GALLON);
     Volume litre = Volume.create(5, UnitOfVolume.LITRE);
 
-    int comparisonResult = gallon.compare(litre);
+    Outcome comparisonResult = gallon.compare(litre);
 
-    assertEquals(1, comparisonResult);
+    assertEquals(Outcome.GREATERTHAN, comparisonResult);
   }
 
   @Test
-  void shouldReturnMinusOneIfFirstVolumeIsSmaller() throws InvalidStandardException {
+  void shouldReturnOutcomeOfLesserThanIfFirstVolumeIsLesser() throws InvalidStandardException {
     Volume gallon = Volume.create(1, UnitOfVolume.GALLON);
     Volume litre = Volume.create(5, UnitOfVolume.LITRE);
 
-    int comparisonResult = gallon.compare(litre);
+    Outcome comparisonResult = gallon.compare(litre);
 
-    assertEquals(-1, comparisonResult);
+    assertEquals(Outcome.LESSERTHAN, comparisonResult);
   }
 
   @Test

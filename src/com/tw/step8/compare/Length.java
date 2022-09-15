@@ -19,13 +19,13 @@ public class Length {
     return new Length(value, unitOfLength);
   }
 
-  public int compare(Length otherLength) {
+  public Outcome compare(Length otherLength) {
     double inCentimeter = this.unit.value * this.value;
     double otherLengthInCentimeter = otherLength.unit.value * otherLength.value;
 
-    if (inCentimeter == otherLengthInCentimeter) return 0;
+    if (inCentimeter == otherLengthInCentimeter) return Outcome.EQUAL;
 
-    return inCentimeter > otherLengthInCentimeter ? 1 : -1;
+    return inCentimeter > otherLengthInCentimeter ? Outcome.GREATERTHAN : Outcome.LESSERTHAN;
   }
 
   public Length add(Length otherLength) throws InvalidStandardException {

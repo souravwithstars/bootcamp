@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Temperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/UnitOfTemperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/TemperatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Outcome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Temperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Volume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/LengthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/TemperatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/TemperatureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/VolumeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -95,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemperatureTest.shouldThrowExceptionForInvalidValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemperatureTest.shouldReturnOutcomeOfGreaterThanWhenFirstTemperatureIsGreater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -105,13 +108,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.TemperatureTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionForInvalidValues" />
+      <option name="METHOD_NAME" value="shouldReturnOutcomeOfGreaterThanWhenFirstTemperatureIsGreater" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemperatureTest.shouldReturnOutcomeOfLesserThanWhenFirstTemperatureIsLesser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -120,13 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.VolumeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.TemperatureTest" />
+      <option name="METHOD_NAME" value="shouldReturnOutcomeOfLesserThanWhenFirstTemperatureIsLesser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolumeTest.shouldAddTwoVolumesOfDifferentUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VolumeTest.shouldReturnOutcomeOfLesserThanIfFirstVolumeIsLesser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.VolumeTest" />
-      <option name="METHOD_NAME" value="shouldAddTwoVolumesOfDifferentUnit" />
+      <option name="METHOD_NAME" value="shouldReturnOutcomeOfLesserThanIfFirstVolumeIsLesser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in bootcamp" />
+        <item itemvalue="JUnit.VolumeTest.shouldReturnOutcomeOfLesserThanIfFirstVolumeIsLesser" />
+        <item itemvalue="JUnit.TemperatureTest.shouldReturnOutcomeOfLesserThanWhenFirstTemperatureIsLesser" />
+        <item itemvalue="JUnit.TemperatureTest.shouldReturnOutcomeOfGreaterThanWhenFirstTemperatureIsGreater" />
         <item itemvalue="JUnit.TemperatureTest.shouldGiveZeroWhenTwoTemperaturesAreSame" />
-        <item itemvalue="JUnit.TemperatureTest.shouldThrowExceptionForInvalidValues" />
-        <item itemvalue="JUnit.VolumeTest" />
-        <item itemvalue="JUnit.VolumeTest.shouldAddTwoVolumesOfDifferentUnit" />
       </list>
     </recent_temporary>
   </component>

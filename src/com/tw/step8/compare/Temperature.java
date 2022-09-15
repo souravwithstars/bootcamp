@@ -15,7 +15,20 @@ public class Temperature {
     return new Temperature(value, unit);
   }
 
-  public int compare(Temperature temperature) {
-    return 0;
+  public Outcome compare(Temperature temperature) {
+    double inCelsius = this.isCelsius() ? this.value : this.convertToCelsius();
+    double otherTemperatureInCelsius = temperature.isCelsius() ? temperature.value : temperature.convertToCelsius();
+
+    if(inCelsius==otherTemperatureInCelsius) return Outcome.EQUAL;
+
+    return inCelsius > otherTemperatureInCelsius ? Outcome.GREATERTHAN : Outcome.LESSERTHAN;
+  }
+
+  private boolean isCelsius() {
+    return this.unit == UnitOfTemperature.CELSIUS;
+  }
+
+  private double convertToCelsius() {
+    return (this.value - 32) * (5 / 9.0);
   }
 }
