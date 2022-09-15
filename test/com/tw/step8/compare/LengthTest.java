@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MetricTest {
+class LengthTest {
   @Test
   void shouldReturnZeroIfBothAreSame() throws InvalidStandardException {
-    Metric feet = Metric.create(1, UnitOfLength.FEET);
-    Metric inch = Metric.create(12, UnitOfLength.INCH);
+    Length feet = Length.create(1, UnitOfLength.FEET);
+    Length inch = Length.create(12, UnitOfLength.INCH);
 
     int comparisonResult = feet.compare(inch);
 
@@ -18,8 +18,8 @@ class MetricTest {
 
   @Test
   void shouldReturnOneIfFirstLengthIsGreater() throws InvalidStandardException {
-    Metric feet = Metric.create(2, UnitOfLength.FEET);
-    Metric inch = Metric.create(12, UnitOfLength.INCH);
+    Length feet = Length.create(2, UnitOfLength.FEET);
+    Length inch = Length.create(12, UnitOfLength.INCH);
 
     int comparisonResult = feet.compare(inch);
 
@@ -28,8 +28,8 @@ class MetricTest {
 
   @Test
   void shouldReturnMinusOneIfFirstLengthIsSmaller() throws InvalidStandardException {
-    Metric feet = Metric.create(1, UnitOfLength.FEET);
-    Metric inch = Metric.create(13, UnitOfLength.INCH);
+    Length feet = Length.create(1, UnitOfLength.FEET);
+    Length inch = Length.create(13, UnitOfLength.INCH);
 
     int comparisonResult = feet.compare(inch);
 
@@ -38,28 +38,28 @@ class MetricTest {
 
   @Test
   void shouldAddTwoLengthsOfSameUnit() throws InvalidStandardException {
-    Metric oneInch = Metric.create(1, UnitOfLength.INCH);
-    Metric twoInch = Metric.create(2, UnitOfLength.INCH);
-    Metric expected = Metric.create(3, UnitOfLength.INCH);
+    Length oneInch = Length.create(1, UnitOfLength.INCH);
+    Length twoInch = Length.create(2, UnitOfLength.INCH);
+    Length expected = Length.create(3, UnitOfLength.INCH);
 
-    Metric actual = oneInch.add(twoInch);
+    Length actual = oneInch.add(twoInch);
 
     assertTrue(expected.isDifferenceInDelta(actual, 0.01));
   }
 
   @Test
   void shouldAddTwoLengthsOfDifferentUnit() throws InvalidStandardException {
-    Metric oneInch = Metric.create(1, UnitOfLength.INCH);
-    Metric centimeter = Metric.create(2.5, UnitOfLength.CM);
-    Metric expected = Metric.create(2, UnitOfLength.INCH);
+    Length oneInch = Length.create(1, UnitOfLength.INCH);
+    Length centimeter = Length.create(2.5, UnitOfLength.CM);
+    Length expected = Length.create(2, UnitOfLength.INCH);
 
-    Metric actual = oneInch.add(centimeter);
+    Length actual = oneInch.add(centimeter);
 
     assertTrue(expected.isDifferenceInDelta(actual, 0.01));
   }
 
   @Test
   void shouldThrowExceptionForInvalidValues() {
-    assertThrows(InvalidStandardException.class, () -> Metric.create(-5, UnitOfLength.MM));
+    assertThrows(InvalidStandardException.class, () -> Length.create(-5, UnitOfLength.MM));
   }
 }
