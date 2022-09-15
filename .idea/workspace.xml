@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,8 +148,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MetricTest" />
-        <item itemvalue="JUnit.MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
         <item itemvalue="JUnit.MetricTest.shouldReturnTrueIfBothMetricsAreEqual" />
+        <item itemvalue="JUnit.MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
         <item itemvalue="JUnit.MetricTest.shouldCompareGivenMetrics" />
         <item itemvalue="JUnit.ChanceTest.ShouldNotRepresentAChance" />
       </list>
