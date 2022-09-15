@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/exception/InvalidStandardException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step8.compare.exception" />
       <recent name="com.tw.step8.chance.exception" />
       <recent name="com.tw.step8.toss" />
       <recent name="com.tw.step8.shapes" />
@@ -65,23 +68,7 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MetricTest">
-    <configuration name="ChanceTest.ShouldNotRepresentAChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.chance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="ShouldNotRepresentAChance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MetricTest.shouldThrowExceptionForInvalidValues">
     <configuration name="MetricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -145,13 +132,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MetricTest.shouldThrowExceptionForInvalidValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionForInvalidValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MetricTest.shouldThrowExceptionForInvalidValues" />
+        <item itemvalue="JUnit.MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
         <item itemvalue="JUnit.MetricTest" />
         <item itemvalue="JUnit.MetricTest.shouldReturnTrueIfBothMetricsAreEqual" />
-        <item itemvalue="JUnit.MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
         <item itemvalue="JUnit.MetricTest.shouldCompareGivenMetrics" />
-        <item itemvalue="JUnit.ChanceTest.ShouldNotRepresentAChance" />
       </list>
     </recent_temporary>
   </component>
