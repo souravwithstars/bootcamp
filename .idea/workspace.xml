@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/exception/InvalidStandardException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/UnitOfLength.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Metric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/exception/InvalidStandardException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/exception/InvalidStandardException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/MetricTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/LengthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +16,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -50,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step8.compare" />
       <recent name="com.tw.step8.compare.exception" />
       <recent name="com.tw.step8.chance.exception" />
       <recent name="com.tw.step8.toss" />
@@ -68,8 +70,8 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MetricTest.shouldThrowExceptionForInvalidValues">
-    <configuration name="MetricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LengthTest.shouldReturnMinusOneIfFirstLengthIsSmaller">
+    <configuration name="LengthTest.shouldReturnFalseIfBothMetricsAreNotEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -78,45 +80,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MetricTest.shouldCompareGivenMetrics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.compare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
-      <option name="METHOD_NAME" value="shouldCompareGivenMetrics" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.compare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.LengthTest" />
       <option name="METHOD_NAME" value="shouldReturnFalseIfBothMetricsAreNotEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MetricTest.shouldReturnTrueIfBothMetricsAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LengthTest.shouldReturnMinusOneIfFirstLengthIsSmaller" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +96,46 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.LengthTest" />
+      <option name="METHOD_NAME" value="shouldReturnMinusOneIfFirstLengthIsSmaller" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthTest.shouldReturnOneIfFirstLengthIsGreater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.LengthTest" />
+      <option name="METHOD_NAME" value="shouldReturnOneIfFirstLengthIsGreater" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthTest.shouldReturnTrueIfBothMetricsAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.LengthTest" />
       <option name="METHOD_NAME" value="shouldReturnTrueIfBothMetricsAreEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MetricTest.shouldThrowExceptionForInvalidValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LengthTest.shouldThrowExceptionForInvalidValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -141,7 +144,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.MetricTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.LengthTest" />
       <option name="METHOD_NAME" value="shouldThrowExceptionForInvalidValues" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -150,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MetricTest.shouldThrowExceptionForInvalidValues" />
-        <item itemvalue="JUnit.MetricTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
-        <item itemvalue="JUnit.MetricTest" />
-        <item itemvalue="JUnit.MetricTest.shouldReturnTrueIfBothMetricsAreEqual" />
-        <item itemvalue="JUnit.MetricTest.shouldCompareGivenMetrics" />
+        <item itemvalue="JUnit.LengthTest.shouldReturnMinusOneIfFirstLengthIsSmaller" />
+        <item itemvalue="JUnit.LengthTest.shouldReturnOneIfFirstLengthIsGreater" />
+        <item itemvalue="JUnit.LengthTest.shouldReturnTrueIfBothMetricsAreEqual" />
+        <item itemvalue="JUnit.LengthTest.shouldThrowExceptionForInvalidValues" />
+        <item itemvalue="JUnit.LengthTest.shouldReturnFalseIfBothMetricsAreNotEqual" />
       </list>
     </recent_temporary>
   </component>

@@ -1,17 +1,15 @@
 package com.tw.step8.compare.exception;
 
 public class InvalidStandardException extends Throwable {
-  private final double higherMetric;
-  private final double lowerMetric;
+  private final double value;
 
-  public InvalidStandardException(double higherMetric, double lowerMetric) {
+  public InvalidStandardException(double value) {
     super();
-    this.higherMetric = higherMetric;
-    this.lowerMetric = lowerMetric;
+    this.value = value;
   }
 
   @Override
   public String getMessage() {
-    return String.format("Can not set values below 1, %d and %d", this.higherMetric, this.lowerMetric);
+    return String.format("Can not set values below 1, %d", this.value);
   }
 }
