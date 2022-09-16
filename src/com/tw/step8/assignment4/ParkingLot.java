@@ -4,7 +4,7 @@ import com.tw.step8.assignment4.exception.ParkingLotFullException;
 
 import java.util.ArrayList;
 
-public class ParkingLot {
+class ParkingLot {
   private final int size;
   private final ArrayList<Car> parkingSlots;
 
