@@ -1,13 +1,14 @@
 package com.tw.step8.assignment4;
 
 import com.tw.step8.assignment4.exception.ParkingLotFullException;
+import com.tw.step8.assignment4.exception.SizeNotAllowedException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ParkingLotTest {
   @Test
-  void shouldParkACarIfParkingSlotIsAvailable() throws ParkingLotFullException {
+  void shouldParkACarIfParkingSlotIsAvailable() throws ParkingLotFullException, SizeNotAllowedException {
     ParkingLot parkingLot = ParkingLot.create(2);
     Car car = new Car();
 
@@ -15,7 +16,7 @@ class ParkingLotTest {
   }
 
   @Test
-  void shouldThrowExceptionWhenSlotIsNotAvailable() throws ParkingLotFullException {
+  void shouldThrowExceptionWhenSlotIsNotAvailable() throws ParkingLotFullException, SizeNotAllowedException {
     ParkingLot parkingLot = ParkingLot.create(1);
     Car firstCar = new Car();
     Car secondCar = new Car();
@@ -25,7 +26,7 @@ class ParkingLotTest {
   }
 
   @Test
-  void shouldInformIfParkingSlotIsUnavailable() throws ParkingLotFullException {
+  void shouldInformIfParkingSlotIsUnavailable() throws ParkingLotFullException, SizeNotAllowedException {
     ParkingLot parkingLot = ParkingLot.create(1);
     Car car = new Car();
 
@@ -35,9 +36,14 @@ class ParkingLotTest {
   }
 
   @Test
-  void shouldInformIfParkingSlotIsAvailable() {
+  void shouldInformIfParkingSlotIsAvailable() throws SizeNotAllowedException {
     ParkingLot parkingLot = ParkingLot.create(1);
 
     assertFalse(parkingLot.isFull());
+  }
+
+  @Test
+  void shouldThrowAnExceptionIfSizeIsLessThanOne() {
+    assertThrows(SizeNotAllowedException.class,()-> ParkingLot.create(-1));
   }
 }
