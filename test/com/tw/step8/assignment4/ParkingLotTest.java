@@ -23,4 +23,21 @@ class ParkingLotTest {
     assertTrue(parkingLot.park(firstCar));
     assertThrows(ParkingLotFullException.class, ()-> parkingLot.park(secondCar));
   }
+
+  @Test
+  void shouldInformIfParkingSlotIsUnavailable() throws ParkingLotFullException {
+    ParkingLot parkingLot = ParkingLot.create(1);
+    Car car = new Car();
+
+    parkingLot.park(car);
+
+    assertTrue(parkingLot.isFull());
+  }
+
+  @Test
+  void shouldInformIfParkingSlotIsAvailable() {
+    ParkingLot parkingLot = ParkingLot.create(1);
+
+    assertFalse(parkingLot.isFull());
+  }
 }
