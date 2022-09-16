@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Capacity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/NotifierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/CivicBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Attendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Attendant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Capacity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Notifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Notifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment4/AttendantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/AttendantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment4/NotifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/NotifierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment4/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/ParkingLotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,8 +77,8 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotTest">
-    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NotifierTest">
+    <configuration name="NotifierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +87,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.NotifierTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldInformIfParkingSlotIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotifierTest.shouldNotifyCivicBodyWhenParkingLotIsEightyPercent (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -100,14 +102,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldInformIfParkingSlotIsAvailable" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.NotifierTest" />
+      <option name="METHOD_NAME" value="shouldNotifyCivicBodyWhenParkingLotIsEightyPercent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldInformIfParkingSlotIsUnavailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotifierTest.shouldNotifyCivicBodyWhenParkingLotIsEightyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -116,14 +118,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldInformIfParkingSlotIsUnavailable" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.NotifierTest" />
+      <option name="METHOD_NAME" value="shouldNotifyCivicBodyWhenParkingLotIsEightyPercent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldThrowAnExceptionIfSizeIsLessThanOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotifierTest.shouldNotifyManagerWhenParkingLotIsEightyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -132,14 +134,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldThrowAnExceptionIfSizeIsLessThanOne" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.NotifierTest" />
+      <option name="METHOD_NAME" value="shouldNotifyManagerWhenParkingLotIsEightyPercent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldThrowExceptionWhenSlotIsNotAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NotifierTest.shouldNotifyManagerWhenParkingLotIsTwentyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -148,8 +150,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenSlotIsNotAvailable" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.NotifierTest" />
+      <option name="METHOD_NAME" value="shouldNotifyManagerWhenParkingLotIsTwentyPercent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParkingLotTest" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldThrowAnExceptionIfSizeIsLessThanOne" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldInformIfParkingSlotIsAvailable" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldInformIfParkingSlotIsUnavailable" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldThrowExceptionWhenSlotIsNotAvailable" />
+        <item itemvalue="JUnit.NotifierTest" />
+        <item itemvalue="JUnit.NotifierTest.shouldNotifyManagerWhenParkingLotIsTwentyPercent" />
+        <item itemvalue="JUnit.NotifierTest.shouldNotifyCivicBodyWhenParkingLotIsEightyPercent (1)" />
+        <item itemvalue="JUnit.NotifierTest.shouldNotifyCivicBodyWhenParkingLotIsEightyPercent" />
+        <item itemvalue="JUnit.NotifierTest.shouldNotifyManagerWhenParkingLotIsEightyPercent" />
       </list>
     </recent_temporary>
   </component>

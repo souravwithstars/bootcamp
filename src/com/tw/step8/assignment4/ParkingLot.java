@@ -10,21 +10,27 @@ class ParkingLot {
   private final ArrayList<Car> parkingSlots;
   private final Attendant[] attendants;
   private final Manager manager;
+  private final CivicBody civicBody;
   private final Notifier notifier;
 
-  private ParkingLot(int size, Attendant[] attendants, Manager manager, Notifier notifier) {
+  private ParkingLot(int size, Attendant[] attendants, Manager manager, CivicBody civicBody, Notifier notifier) {
     this.size = size;
     this.parkingSlots = new ArrayList<>(size);
     this.attendants = attendants;
     this.manager = manager;
+    this.civicBody = civicBody;
     this.notifier = notifier;
   }
 
-  public static ParkingLot create(int size, Attendant[] attendants, Manager manager, Notifier notifier) throws SizeNotAllowedException {
+  public static ParkingLot create(int size,
+                                  Attendant[] attendants,
+                                  Manager manager,
+                                  CivicBody civicBody,
+                                  Notifier notifier) throws SizeNotAllowedException {
     if (size <= 0) {
       throw new SizeNotAllowedException(size);
     }
-    return new ParkingLot(size, attendants, manager, notifier);
+    return new ParkingLot(size, attendants, manager, civicBody, notifier);
   }
 
   public boolean isFull() {
@@ -35,22 +41,36 @@ class ParkingLot {
     if (this.isFull()) {
      throw new ParkingLotFullException(this.size);
     }
+
     this.parkingSlots.add(car);
 
-    if (this.isFull()) {
-      for (Attendant attendant : attendants) {
-        notifier.notify(attendant, this, Capacity.FULL);
-      }
-    }
-
-    if (this.parkingSlots.size() >= 0.8 * this.size) {
-      notifier.notify(manager, this, Capacity.EIGHTY_PERCENT);
-    }
-
-    if (this.parkingSlots.size() <= 0.2 * this.size) {
-      notifier.notify(manager, this, Capacity.TWENTY_PERCENT);
-    }
+    notifyForSlotFull();
+    notifyForEightyPercent();
+    notifyForTwentyPercent();
 
     return true;
+  }
+
+  private void notifyForTwentyPercent() {
+    if (this.parkingSlots.size() <= 0.2 * this.size) {
+      for (Attendant attendant : attendants) {
+        notifier.notify(attendant, this, Status.TWENTY_PERCENT);
+      }
+    }
+  }
+
+  private void notifyForEightyPercent() {
+    if (this.parkingSlots.size() >= 0.8 * this.size) {
+      notifier.notify(manager, this, Status.EIGHTY_PERCENT);
+      notifier.notify(civicBody, this, Status.EIGHTY_PERCENT);
+    }
+  }
+
+  private void notifyForSlotFull() {
+    if (this.isFull()) {
+      for (Attendant attendant : attendants) {
+        notifier.notify(attendant, this, Status.FULL);
+      }
+    }
   }
 }
