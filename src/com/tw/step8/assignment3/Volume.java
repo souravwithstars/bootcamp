@@ -1,6 +1,6 @@
-package com.tw.step8.compare;
+package com.tw.step8.assignment3;
 
-import com.tw.step8.compare.exception.InvalidStandardException;
+import com.tw.step8.assignment3.exception.InvalidStandardException;
 
 public class Volume {
   private final double value;
@@ -12,19 +12,19 @@ public class Volume {
   }
 
   public static Volume create(double value, UnitOfVolume unitOfVolume) throws InvalidStandardException {
-    if (value <= 0) {
+    if (value < 0) {
       throw new InvalidStandardException(value);
     }
     return new Volume(value, unitOfVolume);
   }
 
-  public Outcome compare(Volume otherVolume) {
+  public Rank compare(Volume otherVolume) {
     double inLitre = this.unit.value * this.value;
     double otherVolumeInLitre= otherVolume.unit.value * otherVolume.value;
 
-    if (inLitre == otherVolumeInLitre) return Outcome.EQUAL;
+    if (inLitre == otherVolumeInLitre) return Rank.EQUAL;
 
-    return inLitre > otherVolumeInLitre? Outcome.GREATERTHAN : Outcome.LESSERTHAN;
+    return inLitre > otherVolumeInLitre? Rank.GREATER : Rank.LESSER;
   }
 
   public Volume add(Volume otherVolume) throws InvalidStandardException {

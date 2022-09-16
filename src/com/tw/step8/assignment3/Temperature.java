@@ -1,6 +1,4 @@
-package com.tw.step8.compare;
-
-import com.tw.step8.compare.exception.InvalidStandardException;
+package com.tw.step8.assignment3;
 
 public class Temperature {
   private final double value;
@@ -15,13 +13,13 @@ public class Temperature {
     return new Temperature(value, unit);
   }
 
-  public Outcome compare(Temperature temperature) {
+  public Rank compare(Temperature temperature) {
     double inCelsius = this.isCelsius() ? this.value : this.convertToCelsius();
     double otherTemperatureInCelsius = temperature.isCelsius() ? temperature.value : temperature.convertToCelsius();
 
-    if(inCelsius==otherTemperatureInCelsius) return Outcome.EQUAL;
+    if(inCelsius==otherTemperatureInCelsius) return Rank.EQUAL;
 
-    return inCelsius > otherTemperatureInCelsius ? Outcome.GREATERTHAN : Outcome.LESSERTHAN;
+    return inCelsius > otherTemperatureInCelsius ? Rank.GREATER : Rank.LESSER;
   }
 
   private boolean isCelsius() {

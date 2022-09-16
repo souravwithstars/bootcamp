@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Outcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/exception/ParkingLotFullException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/ParkingLotTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Length.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Temperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/compare/Volume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/LengthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/TemperatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/TemperatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/compare/VolumeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/chance/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment2/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/chance/exception/InvalidProbabilityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment2/exception/InvalidProbabilityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Outcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/Temperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/UnitOfLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/UnitOfLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/UnitOfTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/UnitOfTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/UnitOfVolume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/UnitOfVolume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/Volume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/compare/exception/InvalidStandardException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment3/exception/InvalidStandardException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment1/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/chance/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment2/ChanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment3/LengthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/TemperatureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment3/TemperatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/compare/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment3/VolumeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment1/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/shapes/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment1/SquareTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,11 +68,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step8.assignment4.exception" />
+      <recent name="com.tw.step8.assignment4" />
       <recent name="com.tw.step8.compare" />
       <recent name="com.tw.step8.compare.exception" />
       <recent name="com.tw.step8.chance.exception" />
-      <recent name="com.tw.step8.toss" />
-      <recent name="com.tw.step8.shapes" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -67,13 +81,14 @@
       <recent name="com.tw.step8.toss" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.tw.step8.assignment4" />
       <recent name="com.tw.step8.compare" />
       <recent name="com.tw.step8.chance" />
       <recent name="com.tw.step8.toss" />
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in bootcamp">
+  <component name="RunManager" selected="JUnit.ParkingLotTest">
     <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,33 +97,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemperatureTest.shouldGiveZeroWhenTwoTemperaturesAreSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.TemperatureTest" />
-      <option name="METHOD_NAME" value="shouldGiveZeroWhenTwoTemperaturesAreSame" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemperatureTest.shouldReturnOutcomeOfGreaterThanWhenFirstTemperatureIsGreater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldParkACarIfParkingSlotIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.TemperatureTest" />
-      <option name="METHOD_NAME" value="shouldReturnOutcomeOfGreaterThanWhenFirstTemperatureIsGreater" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldParkACarIfParkingSlotIsAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,12 +132,12 @@
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.TemperatureTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment3.TemperatureTest" />
       <option name="METHOD_NAME" value="shouldReturnOutcomeOfLesserThanWhenFirstTemperatureIsLesser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -134,12 +148,12 @@
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.compare.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.compare" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.compare.VolumeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment3.VolumeTest" />
       <option name="METHOD_NAME" value="shouldReturnOutcomeOfLesserThanIfFirstVolumeIsLesser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -148,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingLotTest" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldParkACarIfParkingSlotIsAvailable" />
         <item itemvalue="JUnit.All in bootcamp" />
         <item itemvalue="JUnit.VolumeTest.shouldReturnOutcomeOfLesserThanIfFirstVolumeIsLesser" />
         <item itemvalue="JUnit.TemperatureTest.shouldReturnOutcomeOfLesserThanWhenFirstTemperatureIsLesser" />
-        <item itemvalue="JUnit.TemperatureTest.shouldReturnOutcomeOfGreaterThanWhenFirstTemperatureIsGreater" />
-        <item itemvalue="JUnit.TemperatureTest.shouldGiveZeroWhenTwoTemperaturesAreSame" />
       </list>
     </recent_temporary>
   </component>

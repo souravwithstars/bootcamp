@@ -1,6 +1,6 @@
-package com.tw.step8.chance;
+package com.tw.step8.assignment2;
 
-import com.tw.step8.chance.exception.InvalidProbabilityException;
+import com.tw.step8.assignment2.exception.InvalidProbabilityException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,6 +1,6 @@
-package com.tw.step8.compare;
+package com.tw.step8.assignment3;
 
-import com.tw.step8.compare.exception.InvalidStandardException;
+import com.tw.step8.assignment3.exception.InvalidStandardException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,9 +12,9 @@ class VolumeTest {
     Volume gallon = Volume.create(1, UnitOfVolume.GALLON);
     Volume litre = Volume.create(3.178, UnitOfVolume.LITRE);
 
-    Outcome comparisonResult = gallon.compare(litre);
+    Rank comparisonResult = gallon.compare(litre);
 
-    assertEquals(Outcome.EQUAL, comparisonResult);
+    assertEquals(Rank.EQUAL, comparisonResult);
   }
 
   @Test
@@ -22,9 +22,9 @@ class VolumeTest {
     Volume gallon = Volume.create(2, UnitOfVolume.GALLON);
     Volume litre = Volume.create(5, UnitOfVolume.LITRE);
 
-    Outcome comparisonResult = gallon.compare(litre);
+    Rank comparisonResult = gallon.compare(litre);
 
-    assertEquals(Outcome.GREATERTHAN, comparisonResult);
+    assertEquals(Rank.GREATER, comparisonResult);
   }
 
   @Test
@@ -32,9 +32,9 @@ class VolumeTest {
     Volume gallon = Volume.create(1, UnitOfVolume.GALLON);
     Volume litre = Volume.create(5, UnitOfVolume.LITRE);
 
-    Outcome comparisonResult = gallon.compare(litre);
+    Rank comparisonResult = gallon.compare(litre);
 
-    assertEquals(Outcome.LESSERTHAN, comparisonResult);
+    assertEquals(Rank.LESSER, comparisonResult);
   }
 
   @Test

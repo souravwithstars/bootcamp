@@ -1,4 +1,4 @@
-package com.tw.step8.compare.exception;
+package com.tw.step8.assignment3.exception;
 
 public class InvalidStandardException extends Throwable {
   private final double value;

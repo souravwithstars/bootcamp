@@ -1,4 +1,4 @@
-package com.tw.step8.compare;
+package com.tw.step8.assignment3;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,9 +11,9 @@ class TemperatureTest {
     Temperature celsius = Temperature.create(100, UnitOfTemperature.CELSIUS);
     Temperature fahrenheit = Temperature.create(212, UnitOfTemperature.FAHRENHEIT);
 
-    Outcome actual = celsius.compare(fahrenheit);
+    Rank actual = celsius.compare(fahrenheit);
 
-    assertEquals(Outcome.EQUAL, actual);
+    assertEquals(Rank.EQUAL, actual);
   }
 
   @Test
@@ -21,9 +21,9 @@ class TemperatureTest {
     Temperature celsius = Temperature.create(100, UnitOfTemperature.CELSIUS);
     Temperature fahrenheit = Temperature.create(200, UnitOfTemperature.FAHRENHEIT);
 
-    Outcome actual = celsius.compare(fahrenheit);
+    Rank actual = celsius.compare(fahrenheit);
 
-    assertEquals(Outcome.GREATERTHAN, actual);
+    assertEquals(Rank.GREATER, actual);
   }
 
   @Test
@@ -31,8 +31,8 @@ class TemperatureTest {
     Temperature celsius = Temperature.create(100, UnitOfTemperature.CELSIUS);
     Temperature fahrenheit = Temperature.create(250, UnitOfTemperature.FAHRENHEIT);
 
-    Outcome actual = celsius.compare(fahrenheit);
+    Rank actual = celsius.compare(fahrenheit);
 
-    assertEquals(Outcome.LESSERTHAN, actual);
+    assertEquals(Rank.LESSER, actual);
   }
 }

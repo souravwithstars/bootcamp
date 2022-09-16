@@ -1,6 +1,6 @@
-package com.tw.step8.compare;
+package com.tw.step8.assignment3;
 
-import com.tw.step8.compare.exception.InvalidStandardException;
+import com.tw.step8.assignment3.exception.InvalidStandardException;
 
 public class Length {
 
@@ -13,19 +13,19 @@ public class Length {
   }
 
   public static Length create(double value, UnitOfLength unitOfLength) throws InvalidStandardException {
-    if (value <= 0) {
+    if (value < 0) {
       throw new InvalidStandardException(value);
     }
     return new Length(value, unitOfLength);
   }
 
-  public Outcome compare(Length otherLength) {
+  public Rank compare(Length otherLength) {
     double inCentimeter = this.unit.value * this.value;
     double otherLengthInCentimeter = otherLength.unit.value * otherLength.value;
 
-    if (inCentimeter == otherLengthInCentimeter) return Outcome.EQUAL;
+    if (inCentimeter == otherLengthInCentimeter) return Rank.EQUAL;
 
-    return inCentimeter > otherLengthInCentimeter ? Outcome.GREATERTHAN : Outcome.LESSERTHAN;
+    return inCentimeter > otherLengthInCentimeter ? Rank.GREATER : Rank.LESSER;
   }
 
   public Length add(Length otherLength) throws InvalidStandardException {

@@ -1,6 +1,6 @@
-package com.tw.step8.compare;
+package com.tw.step8.assignment3;
 
-import com.tw.step8.compare.exception.InvalidStandardException;
+import com.tw.step8.assignment3.exception.InvalidStandardException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,9 +11,9 @@ class LengthTest {
     Length feet = Length.create(1, UnitOfLength.FEET);
     Length inch = Length.create(12, UnitOfLength.INCH);
 
-    Outcome comparisonResult = feet.compare(inch);
+    Rank comparisonResult = feet.compare(inch);
 
-    assertEquals(Outcome.EQUAL, comparisonResult);
+    assertEquals(Rank.EQUAL, comparisonResult);
   }
 
   @Test
@@ -21,9 +21,9 @@ class LengthTest {
     Length feet = Length.create(2, UnitOfLength.FEET);
     Length inch = Length.create(12, UnitOfLength.INCH);
 
-    Outcome comparisonResult = feet.compare(inch);
+    Rank comparisonResult = feet.compare(inch);
 
-    assertEquals(Outcome.GREATERTHAN, comparisonResult);
+    assertEquals(Rank.GREATER, comparisonResult);
   }
 
   @Test
@@ -31,9 +31,9 @@ class LengthTest {
     Length feet = Length.create(1, UnitOfLength.FEET);
     Length inch = Length.create(13, UnitOfLength.INCH);
 
-    Outcome comparisonResult = feet.compare(inch);
+    Rank comparisonResult = feet.compare(inch);
 
-    assertEquals(Outcome.LESSERTHAN, comparisonResult);
+    assertEquals(Rank.LESSER, comparisonResult);
   }
 
   @Test

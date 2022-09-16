@@ -1,4 +1,4 @@
-package com.tw.step8.chance.exception;
+package com.tw.step8.assignment2.exception;
 
 public class InvalidProbabilityException extends Throwable {
   private final double probability;
