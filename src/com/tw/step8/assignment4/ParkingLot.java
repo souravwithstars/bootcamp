@@ -10,7 +10,7 @@ class ParkingLot {
 
   private ParkingLot(int size) {
     this.size = size;
-    this.parkingSlots = new ArrayList<Car>(size);
+    this.parkingSlots = new ArrayList<>(size);
   }
 
   public static ParkingLot create(int limit) {
