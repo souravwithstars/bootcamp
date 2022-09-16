@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/exception/SizeNotAllowedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Capacity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/NotifierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Attendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Attendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment4/AttendantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/AttendantTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -49,8 +54,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.tw.step8.assignment4.exception" />
       <recent name="com.tw.step8.assignment4" />
+      <recent name="com.tw.step8.assignment4.exception" />
       <recent name="com.tw.step8.compare" />
       <recent name="com.tw.step8.compare.exception" />
       <recent name="com.tw.step8.chance.exception" />
@@ -59,6 +64,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tw.step8.assignment4" />
       <recent name="com.tw.step8.toss" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -69,8 +75,8 @@
       <recent name="com.tw.step8.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.tw.step8.assignment4 in bootcamp">
-    <configuration name="AttendantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParkingLotTest">
+    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +85,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.AttendantTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AttendantTest.shouldParkACarIfSlotIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldInformIfParkingSlotIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -94,14 +100,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.AttendantTest" />
-      <option name="METHOD_NAME" value="shouldParkACarIfSlotIsAvailable" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldInformIfParkingSlotIsAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AttendantTest.shouldThrowExceptionIfParkingSlotIsUnavailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldInformIfParkingSlotIsUnavailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -110,8 +116,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.AttendantTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionIfParkingSlotIsUnavailable" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldInformIfParkingSlotIsUnavailable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.tw.step8.assignment4 in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldThrowExceptionWhenSlotIsNotAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -142,18 +148,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenSlotIsNotAvailable" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.tw.step8.assignment4 in bootcamp" />
+        <item itemvalue="JUnit.ParkingLotTest" />
         <item itemvalue="JUnit.ParkingLotTest.shouldThrowAnExceptionIfSizeIsLessThanOne" />
-        <item itemvalue="JUnit.AttendantTest.shouldThrowExceptionIfParkingSlotIsUnavailable" />
-        <item itemvalue="JUnit.AttendantTest" />
-        <item itemvalue="JUnit.AttendantTest.shouldParkACarIfSlotIsAvailable" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldInformIfParkingSlotIsAvailable" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldInformIfParkingSlotIsUnavailable" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldThrowExceptionWhenSlotIsNotAvailable" />
       </list>
     </recent_temporary>
   </component>

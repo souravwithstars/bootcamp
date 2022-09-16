@@ -8,8 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ParkingLotTest {
   @Test
-  void shouldParkACarIfParkingSlotIsAvailable() throws ParkingLotFullException, SizeNotAllowedException {
-    ParkingLot parkingLot = ParkingLot.create(2);
+  void shouldParkACarIfParkingSlotIsAvailable() throws SizeNotAllowedException, ParkingLotFullException {
+    Attendant[] attendants = {new Attendant(), new Attendant()};
+    Manager manager = new Manager();
+    Notifier notifier = new Notifier();
+    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, notifier);
     Car car = new Car();
 
     assertTrue(parkingLot.park(car));
@@ -17,7 +20,10 @@ class ParkingLotTest {
 
   @Test
   void shouldThrowExceptionWhenSlotIsNotAvailable() throws ParkingLotFullException, SizeNotAllowedException {
-    ParkingLot parkingLot = ParkingLot.create(1);
+    Attendant[] attendants = {new Attendant(), new Attendant()};
+    Manager manager = new Manager();
+    Notifier notifier = new Notifier();
+    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, notifier);
     Car firstCar = new Car();
     Car secondCar = new Car();
 
@@ -27,7 +33,10 @@ class ParkingLotTest {
 
   @Test
   void shouldInformIfParkingSlotIsUnavailable() throws ParkingLotFullException, SizeNotAllowedException {
-    ParkingLot parkingLot = ParkingLot.create(1);
+    Attendant[] attendants = {new Attendant(), new Attendant()};
+    Manager manager = new Manager();
+    Notifier notifier = new Notifier();
+    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, notifier);
     Car car = new Car();
 
     parkingLot.park(car);
@@ -37,13 +46,19 @@ class ParkingLotTest {
 
   @Test
   void shouldInformIfParkingSlotIsAvailable() throws SizeNotAllowedException {
-    ParkingLot parkingLot = ParkingLot.create(1);
+    Attendant[] attendants = {new Attendant(), new Attendant()};
+    Manager manager = new Manager();
+    Notifier notifier = new Notifier();
+    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, notifier);
 
     assertFalse(parkingLot.isFull());
   }
 
   @Test
   void shouldThrowAnExceptionIfSizeIsLessThanOne() {
-    assertThrows(SizeNotAllowedException.class,()-> ParkingLot.create(-1));
+    Attendant[] attendants = {new Attendant(), new Attendant()};
+    Manager manager = new Manager();
+    Notifier notifier = new Notifier();
+    assertThrows(SizeNotAllowedException.class,()-> ParkingLot.create(-1, attendants, manager, notifier));
   }
 }
