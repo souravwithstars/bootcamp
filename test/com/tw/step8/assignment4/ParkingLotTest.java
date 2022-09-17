@@ -9,11 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class ParkingLotTest {
   @Test
   void shouldParkACarIfParkingSlotIsAvailable() throws SizeNotAllowedException, ParkingLotFullException {
-    Attendant[] attendants = {new Attendant("a-1"), new Attendant("a-2")};
-    Manager manager = new Manager("m-1");
-    CivicBody civicBody = new CivicBody("cb-1");
     Notifier notifier = new Notifier();
-    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, civicBody, notifier);
+    ParkingLot parkingLot = ParkingLot.create(1, notifier);
     Car car = new Car("c-1");
 
     assertTrue(parkingLot.park(car));
@@ -21,11 +18,8 @@ class ParkingLotTest {
 
   @Test
   void shouldThrowExceptionWhenSlotIsNotAvailable() throws ParkingLotFullException, SizeNotAllowedException {
-    Attendant[] attendants = {new Attendant("a-1"), new Attendant("a-2")};
-    Manager manager = new Manager("m-1");
-    CivicBody civicBody = new CivicBody("cb-1");
     Notifier notifier = new Notifier();
-    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, civicBody, notifier);
+    ParkingLot parkingLot = ParkingLot.create(1, notifier);
     Car firstCar = new Car("c-1");
     Car secondCar = new Car("c-2");
 
@@ -34,36 +28,8 @@ class ParkingLotTest {
   }
 
   @Test
-  void shouldInformIfParkingSlotIsUnavailable() throws ParkingLotFullException, SizeNotAllowedException {
-    Attendant[] attendants = {new Attendant("a-1"), new Attendant("a-2")};
-    Manager manager = new Manager("m-1");
-    CivicBody civicBody = new CivicBody("cb-1");
-    Notifier notifier = new Notifier();
-    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, civicBody, notifier);
-    Car car = new Car("c-1");
-
-    parkingLot.park(car);
-
-    assertTrue(parkingLot.isFull());
-  }
-
-  @Test
-  void shouldInformIfParkingSlotIsAvailable() throws SizeNotAllowedException {
-    Attendant[] attendants = {new Attendant("a-1"), new Attendant("a-2")};
-    Manager manager = new Manager("m-1");
-    CivicBody civicBody = new CivicBody("cb-1");
-    Notifier notifier = new Notifier();
-    ParkingLot parkingLot = ParkingLot.create(1, attendants, manager, civicBody, notifier);
-
-    assertFalse(parkingLot.isFull());
-  }
-
-  @Test
   void shouldThrowAnExceptionIfSizeIsLessThanOne() {
-    Attendant[] attendants = {new Attendant("a-1"), new Attendant("a-2")};
-    Manager manager = new Manager("m-1");
-    CivicBody civicBody = new CivicBody("cb-1");
     Notifier notifier = new Notifier();
-    assertThrows(SizeNotAllowedException.class, () -> ParkingLot.create(-1, attendants, manager, civicBody, notifier));
+    assertThrows(SizeNotAllowedException.class, () -> ParkingLot.create(-1, notifier));
   }
 }
