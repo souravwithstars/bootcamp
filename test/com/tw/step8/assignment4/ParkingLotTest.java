@@ -32,4 +32,56 @@ class ParkingLotTest {
     Notifier notifier = new Notifier();
     assertThrows(SizeNotAllowedException.class, () -> ParkingLot.create(-1, notifier));
   }
+
+  @Test
+  void shouldNotifyObserversWhenParkingLotIsTwentyPercent() throws SizeNotAllowedException {
+    Manager manager = new Manager("m-1");
+    Notifier notifier = new Notifier() {
+      @Override
+      public boolean notify(ParkingLot parkingLot, Status status) {
+        assertEquals(status, Status.TWENTY_PERCENT);
+        return true;
+      }
+    };
+    notifier.add(Status.TWENTY_PERCENT, manager);
+    ParkingLot parkingLot = ParkingLot.create(1, notifier);
+
+    assertTrue(notifier.notify(parkingLot, Status.TWENTY_PERCENT));
+  }
+
+  @Test
+  void shouldNotifyObserversWhenParkingLotIsEightyPercent() throws SizeNotAllowedException {
+    Manager manager = new Manager("m-1");
+
+    Notifier notifier = new Notifier() {
+      @Override
+      public boolean notify(ParkingLot parkingLot, Status status) {
+        assertEquals(status, Status.EIGHTY_PERCENT);
+        return true;
+      }
+    };
+    notifier.add(Status.EIGHTY_PERCENT, manager);
+
+    ParkingLot parkingLot = ParkingLot.create(1, notifier);
+
+    assertTrue(notifier.notify(parkingLot, Status.EIGHTY_PERCENT));
+  }
+
+  @Test
+  void shouldNotifyObserversWhenParkingLotIsFull() throws SizeNotAllowedException {
+    Attendant attendant = new Attendant("a-1");
+
+    Notifier notifier = new Notifier() {
+      @Override
+      public boolean notify(ParkingLot parkingLot, Status status) {
+        assertEquals(status, Status.FULL);
+        return true;
+      }
+    };
+    notifier.add(Status.FULL, attendant);
+
+    ParkingLot parkingLot = ParkingLot.create(1, notifier);
+
+    assertTrue(notifier.notify(parkingLot, Status.FULL));
+  }
 }

@@ -7,7 +7,7 @@ public class Notifier {
   final HashMap<Status, ArrayList<Observer>> mapper;
 
   public Notifier() {
-    this.mapper = new HashMap<Status, ArrayList<Observer>>();
+    this.mapper = new HashMap<>();
   }
 
   public void add(Status status, Observer observer) {

@@ -25,6 +25,45 @@ class NotifierTest {
   }
 
   @Test
+  void shouldNotifyManagerWhenParkingLotIsTwentyPercent() throws SizeNotAllowedException {
+    Manager manager = new Manager("m-1"){
+      @Override
+      public void notify(ParkingLot parkingLot, Status status) {
+        assertEquals(status , Status.TWENTY_PERCENT);
+      }
+    };
+    Notifier notifier = new Notifier();
+    notifier.add(Status.TWENTY_PERCENT, manager);
+    ParkingLot parkingLot = ParkingLot.create(1,notifier);
+
+    assertTrue(notifier.notify(parkingLot, Status.TWENTY_PERCENT));
+  }
+
+  @Test
+  void shouldNotifyAttendantsWhenParkingLotIsFull() throws SizeNotAllowedException {
+    Attendant firstAttendant = new Attendant("a-1"){
+      @Override
+      public void notify(ParkingLot parkingLot, Status status) {
+        assertEquals(status , Status.FULL);
+      }
+    };
+
+    Attendant secondAttendant = new Attendant("a-2"){
+      @Override
+      public void notify(ParkingLot parkingLot, Status status) {
+        assertEquals(status , Status.FULL);
+      }
+    };
+
+    Notifier notifier = new Notifier();
+    notifier.add(Status.FULL, firstAttendant);
+    notifier.add(Status.FULL, secondAttendant);
+    ParkingLot parkingLot = ParkingLot.create(1,notifier);
+
+    assertTrue(notifier.notify(parkingLot, Status.FULL));
+  }
+
+  @Test
   void shouldNotifyCivicBodyWhenParkingLotIsEightyPercent() throws SizeNotAllowedException {
     CivicBody civicBody = new CivicBody("cb-1"){
       @Override

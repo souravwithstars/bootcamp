@@ -4,7 +4,6 @@
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Notifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/Notifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment4/ParkingLot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment4/NotifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/NotifierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment4/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment4/ParkingLotTest.java" afterDir="false" />
     </list>
@@ -73,7 +72,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.com.tw.step8.assignment4 in bootcamp">
-    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsEightyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -83,28 +82,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParkingLotTest.shouldParkACarIfParkingSlotIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldParkACarIfParkingSlotIsAvailable" />
+      <option name="METHOD_NAME" value="shouldNotifyObserversWhenParkingLotIsEightyPercent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldThrowAnExceptionIfSizeIsLessThanOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -114,13 +98,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldThrowAnExceptionIfSizeIsLessThanOne" />
+      <option name="METHOD_NAME" value="shouldNotifyObserversWhenParkingLotIsFull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldThrowExceptionWhenSlotIsNotAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsTwentyPercent (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -130,7 +114,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenSlotIsNotAvailable" />
+      <option name="METHOD_NAME" value="shouldNotifyObserversWhenParkingLotIsTwentyPercent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsTwentyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldNotifyObserversWhenParkingLotIsTwentyPercent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,10 +153,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.com.tw.step8.assignment4 in bootcamp" />
-        <item itemvalue="JUnit.ParkingLotTest" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldThrowAnExceptionIfSizeIsLessThanOne" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldThrowExceptionWhenSlotIsNotAvailable" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldParkACarIfParkingSlotIsAvailable" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsFull" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsEightyPercent" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsTwentyPercent (1)" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsTwentyPercent" />
       </list>
     </recent_temporary>
   </component>
