@@ -2,19 +2,19 @@ package com.tw.step8.assignment5;
 
 import java.util.HashSet;
 
-public enum Color {
+public enum MagicalColor {
     GREEN() {
         @Override
         public boolean isAddable(HashSet<MagicBall> balls) {
-            long greenBalls = Color.countBallsOfColor(balls, Color.GREEN);
+            long greenBalls = MagicalColor.countBallsOfColor(balls, MagicalColor.GREEN);
             return greenBalls < 3;
         }
     },
     RED() {
         @Override
         public boolean isAddable(HashSet<MagicBall> balls) {
-            long greenBalls = Color.countBallsOfColor(balls, Color.GREEN);
-            long redBalls = Color.countBallsOfColor(balls, Color.RED);
+            long greenBalls = MagicalColor.countBallsOfColor(balls, MagicalColor.GREEN);
+            long redBalls = MagicalColor.countBallsOfColor(balls, MagicalColor.RED);
 
             return (2 * greenBalls) > redBalls;
         }
@@ -22,37 +22,37 @@ public enum Color {
     BLUE() {
         @Override
         public boolean isAddable(HashSet<MagicBall> balls) {
-            long blackBalls = Color.countBallsOfColor(balls, Color.BLACK);
+            long blackBalls = MagicalColor.countBallsOfColor(balls, MagicalColor.BLACK);
             return blackBalls == 0;
         }
     },
     BLACK() {
         @Override
         public boolean isAddable(HashSet<MagicBall> balls) {
-            long blueBalls = Color.countBallsOfColor(balls, Color.BLUE);
+            long blueBalls = MagicalColor.countBallsOfColor(balls, MagicalColor.BLUE);
             return blueBalls == 0;
         }
     },
     YELLOW() {
         @Override
         public boolean isAddable(HashSet<MagicBall> balls) {
-            long yellowBalls = countBallsOfColor(balls, Color.YELLOW);
+            long yellowBalls = countBallsOfColor(balls, MagicalColor.YELLOW);
             double futurePercentageOfYellow = (yellowBalls + 1) * 100.0 / (balls.size() + 1);
 
             return futurePercentageOfYellow <= 40;
         }
     };
 
-    Color() {
+    MagicalColor() {
     }
 
     public boolean isAddable(HashSet<MagicBall> balls) {
         return false;
     }
 
-    private static long countBallsOfColor(HashSet<MagicBall> balls, Color color) {
+    private static long countBallsOfColor(HashSet<MagicBall> balls, MagicalColor magicalColor) {
         return balls.stream()
-                .filter(ball -> ball.color == color)
+                .filter(ball -> ball.magicalColor == magicalColor)
                 .count();
     }
 }

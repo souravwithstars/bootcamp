@@ -5,11 +5,11 @@ import com.tw.step8.assignment5.exception.NoSpaceInBagException;
 import java.util.HashSet;
 
 public class Bag {
-    private HashSet<MagicBall> balls;
-    private Integer maxSize;
+    private final HashSet<MagicBall> balls;
+    private final Integer maxSize;
 
     public Bag(Integer maxSize) {
-        this.balls = new HashSet<MagicBall>(maxSize);
+        this.balls = new HashSet<>(maxSize);
         this.maxSize = maxSize;
     }
 
@@ -27,7 +27,7 @@ public class Bag {
     }
 
     private boolean isAddable(MagicBall magicBall) throws NoSpaceInBagException {
-        Color ballColor = magicBall.color;
-        return !this.isFull() && ballColor.isAddable(this.balls);
+        MagicalColor ballMagicalColor = magicBall.magicalColor;
+        return !this.isFull() && ballMagicalColor.isAddable(this.balls);
     }
 }

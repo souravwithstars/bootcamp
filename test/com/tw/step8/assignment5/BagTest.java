@@ -9,7 +9,7 @@ class BagTest {
     @Test
     void shouldPutMagicBallToTheBag() throws NoSpaceInBagException {
         Bag bag = new Bag(12);
-        MagicBall magicBall1 = new MagicBall(1, Color.GREEN);
+        MagicBall magicBall1 = new MagicBall(1, MagicalColor.GREEN);
 
         assertTrue(bag.put(magicBall1));
     }
@@ -17,8 +17,8 @@ class BagTest {
     @Test
     void shouldThrowNoSpaceInBagExceptionIfTheBagIsFull() throws NoSpaceInBagException {
         Bag bag = new Bag(1);
-        MagicBall magicBall1 = new MagicBall(1, Color.GREEN);
-        MagicBall magicBall2 = new MagicBall(2, Color.GREEN);
+        MagicBall magicBall1 = new MagicBall(1, MagicalColor.GREEN);
+        MagicBall magicBall2 = new MagicBall(2, MagicalColor.GREEN);
 
         assertTrue(bag.put(magicBall1));
         assertThrows(NoSpaceInBagException.class, () -> bag.put(magicBall2));
@@ -27,10 +27,10 @@ class BagTest {
     @Test
     void shouldNotPutMagicBallToTheBagIfBallsColorLimitIsReached() throws NoSpaceInBagException {
         Bag bag = new Bag(5);
-        MagicBall magicBall1 = new MagicBall(1, Color.GREEN);
-        MagicBall magicBall2 = new MagicBall(2, Color.GREEN);
-        MagicBall magicBall3 = new MagicBall(3, Color.GREEN);
-        MagicBall magicBall4 = new MagicBall(4, Color.GREEN);
+        MagicBall magicBall1 = new MagicBall(1, MagicalColor.GREEN);
+        MagicBall magicBall2 = new MagicBall(2, MagicalColor.GREEN);
+        MagicBall magicBall3 = new MagicBall(3, MagicalColor.GREEN);
+        MagicBall magicBall4 = new MagicBall(4, MagicalColor.GREEN);
 
         assertTrue(bag.put(magicBall1));
         assertTrue(bag.put(magicBall2));
@@ -41,7 +41,7 @@ class BagTest {
     @Test
     void shouldNotPutRedMagicBallToTheBagIfBagIsEmpty() throws NoSpaceInBagException {
         Bag bag = new Bag(3);
-        MagicBall redMagicBall = new MagicBall(1, Color.RED);
+        MagicBall redMagicBall = new MagicBall(1, MagicalColor.RED);
 
         assertFalse(bag.put(redMagicBall));
     }
@@ -49,10 +49,10 @@ class BagTest {
     @Test
     void shouldNotPut3rdRedMagicBallIfBagContainsOneGreenBall() throws NoSpaceInBagException {
         Bag bag = new Bag(5);
-        MagicBall greenMagicBall = new MagicBall(1, Color.GREEN);
-        MagicBall redMagicBall1 = new MagicBall(2, Color.RED);
-        MagicBall redMagicBall2 = new MagicBall(3, Color.RED);
-        MagicBall redMagicBall3 = new MagicBall(4, Color.RED);
+        MagicBall greenMagicBall = new MagicBall(1, MagicalColor.GREEN);
+        MagicBall redMagicBall1 = new MagicBall(2, MagicalColor.RED);
+        MagicBall redMagicBall2 = new MagicBall(3, MagicalColor.RED);
+        MagicBall redMagicBall3 = new MagicBall(4, MagicalColor.RED);
 
         assertTrue(bag.put(greenMagicBall));
         assertTrue(bag.put(redMagicBall1));
@@ -63,7 +63,7 @@ class BagTest {
     @Test
     void shouldNotPutYellowAtFirstIfBagCapacityIsLessThanThree() throws NoSpaceInBagException {
         Bag bag = new Bag(1);
-        MagicBall yellowMagicBall = new MagicBall(1, Color.YELLOW);
+        MagicBall yellowMagicBall = new MagicBall(1, MagicalColor.YELLOW);
 
         assertFalse(bag.put(yellowMagicBall));
     }
@@ -71,9 +71,9 @@ class BagTest {
     @Test
     void shouldPutOneYellowIfBagsCurrentBallsCountIsTwo() throws NoSpaceInBagException {
         Bag bag = new Bag(4);
-        MagicBall greenMagicBall = new MagicBall(1, Color.GREEN);
-        MagicBall redMagicBall = new MagicBall(2, Color.RED);
-        MagicBall yellowMagicBall = new MagicBall(3, Color.YELLOW);
+        MagicBall greenMagicBall = new MagicBall(1, MagicalColor.GREEN);
+        MagicBall redMagicBall = new MagicBall(2, MagicalColor.RED);
+        MagicBall yellowMagicBall = new MagicBall(3, MagicalColor.YELLOW);
 
         assertTrue(bag.put(greenMagicBall));
         assertTrue(bag.put(redMagicBall));
@@ -83,10 +83,10 @@ class BagTest {
     @Test
     void shouldPutSecondYellowIfBagsCurrentBallsCountIsThree() throws NoSpaceInBagException {
         Bag bag = new Bag(4);
-        MagicBall greenMagicBall = new MagicBall(1, Color.GREEN);
-        MagicBall redMagicBall = new MagicBall(2, Color.RED);
-        MagicBall yellowMagicBall1 = new MagicBall(3, Color.YELLOW);
-        MagicBall yellowMagicBall2 = new MagicBall(4, Color.YELLOW);
+        MagicBall greenMagicBall = new MagicBall(1, MagicalColor.GREEN);
+        MagicBall redMagicBall = new MagicBall(2, MagicalColor.RED);
+        MagicBall yellowMagicBall1 = new MagicBall(3, MagicalColor.YELLOW);
+        MagicBall yellowMagicBall2 = new MagicBall(4, MagicalColor.YELLOW);
 
         assertTrue(bag.put(greenMagicBall));
         assertTrue(bag.put(redMagicBall));
@@ -97,8 +97,8 @@ class BagTest {
     @Test
     void shouldNotAddBlueBallIfBagContainsBlackBalls() throws NoSpaceInBagException {
         Bag bag = new Bag(4);
-        MagicBall blackMagicBall = new MagicBall(1, Color.BLACK);
-        MagicBall blueMagicBall = new MagicBall(2, Color.BLUE);
+        MagicBall blackMagicBall = new MagicBall(1, MagicalColor.BLACK);
+        MagicBall blueMagicBall = new MagicBall(2, MagicalColor.BLUE);
 
         assertTrue(bag.put(blackMagicBall));
         assertFalse(bag.put(blueMagicBall));
@@ -107,8 +107,8 @@ class BagTest {
     @Test
     void shouldNotAddBlackBallIfBagContainsBlueBalls() throws NoSpaceInBagException {
         Bag bag = new Bag(4);
-        MagicBall blueMagicBall = new MagicBall(1, Color.BLUE);
-        MagicBall blackMagicBall = new MagicBall(2, Color.BLACK);
+        MagicBall blueMagicBall = new MagicBall(1, MagicalColor.BLUE);
+        MagicBall blackMagicBall = new MagicBall(2, MagicalColor.BLACK);
 
         assertTrue(bag.put(blueMagicBall));
         assertFalse(bag.put(blackMagicBall));
