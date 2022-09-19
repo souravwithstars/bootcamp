@@ -27,9 +27,11 @@ public class Bag {
     }
 
     private boolean isColorLimitReached(MagicBall magicBall) {
-        Integer count = Math.toIntExact(this.balls.stream()
+        if (magicBall.color != this.color) return true;
+
+        long count = this.balls.stream()
                 .filter(ball -> ball.color == magicBall.color)
-                .count());
+                .count();
 
         return count == colorLimit;
     }
