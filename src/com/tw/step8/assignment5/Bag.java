@@ -5,14 +5,10 @@ import java.util.HashSet;
 public class Bag {
     private HashSet<MagicBall> balls;
     private Integer maxSize;
-    private Color color;
-    private Integer colorLimit;
 
-    public Bag(Integer maxSize, Color color, Integer colorLimit) {
+    public Bag(Integer maxSize) {
         this.balls = new HashSet<MagicBall>(maxSize);
         this.maxSize = maxSize;
-        this.color = color;
-        this.colorLimit = colorLimit;
     }
 
     public boolean put(MagicBall magicBall) {
@@ -23,16 +19,22 @@ public class Bag {
     }
 
     private boolean isAddable(MagicBall magicBall) {
-        return !(this.isFull() || this.isColorLimitReached(magicBall));
+        return !this.isFull() && this.isCriteriaMatchForAdding(magicBall);
     }
 
-    private boolean isColorLimitReached(MagicBall magicBall) {
-        if (magicBall.color == color.RED) return !this.canAddRedBalls();
-        if (magicBall.color == color.YELLOW) return !this.canAddYellowBalls();
-        if(magicBall.color == color.BLUE) return !this.canAddBlueBalls();
-        if(magicBall.color == color.BLACK) return !this.canAddBlackBalls();
+    private boolean isCriteriaMatchForAdding(MagicBall magicBall) {
+        if (magicBall.color == Color.RED) return this.canAddRedBalls();
+        if (magicBall.color == Color.YELLOW) return this.canAddYellowBalls();
+        if(magicBall.color == Color.BLUE) return this.canAddBlueBalls();
+        if(magicBall.color == Color.BLACK) return this.canAddBlackBalls();
+        if(magicBall.color == Color.GREEN) return this.canAddGreenBalls();
 
-        return countBallsOfColor(magicBall.color) == colorLimit;
+        return false;
+    }
+
+    private boolean canAddGreenBalls() {
+        long greenBalls = countBallsOfColor(Color.GREEN);
+        return greenBalls < 3;
     }
 
     private boolean canAddBlackBalls() {
