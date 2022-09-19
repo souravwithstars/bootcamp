@@ -89,4 +89,24 @@ class BagTest {
         assertTrue(bag.put(yellowMagicBall1));
         assertFalse(bag.put(yellowMagicBall2));
     }
+
+    @Test
+    void shouldNotAddBlueBallIfBagContainsBlackBalls() {
+        Bag bag = new Bag(4, Color.GREEN, 1);
+        MagicBall blackMagicBall = new MagicBall(1, Color.BLACK);
+        MagicBall blueMagicBall = new MagicBall(2, Color.BLUE);
+
+        assertTrue(bag.put(blackMagicBall));
+        assertFalse(bag.put(blueMagicBall));
+    }
+
+    @Test
+    void shouldNotAddBlackBallIfBagContainsBlueBalls() {
+        Bag bag = new Bag(4, Color.GREEN, 1);
+        MagicBall blueMagicBall = new MagicBall(1, Color.BLUE);
+        MagicBall blackMagicBall = new MagicBall(2, Color.BLACK);
+
+        assertTrue(bag.put(blueMagicBall));
+        assertFalse(bag.put(blackMagicBall));
+    }
 }
