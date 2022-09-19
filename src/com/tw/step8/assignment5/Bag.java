@@ -28,8 +28,16 @@ public class Bag {
 
     private boolean isColorLimitReached(MagicBall magicBall) {
         if (magicBall.color == color.RED) return !this.canAddRedBalls();
+        if (magicBall.color == color.YELLOW) return !this.canAddYellowBalls();
 
         return countBallsOfColor(magicBall.color) == colorLimit;
+    }
+
+    private boolean canAddYellowBalls() {
+        long yellowBalls = countBallsOfColor(Color.YELLOW);
+        double futurePercentageOfYellow = (yellowBalls + 1) * 100.0 / (this.balls.size() + 1);
+
+        return futurePercentageOfYellow <= 40;
     }
 
     private boolean canAddRedBalls() {

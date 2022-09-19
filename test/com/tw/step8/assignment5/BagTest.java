@@ -44,7 +44,7 @@ class BagTest {
 
     @Test
     void shouldNotPut3rdRedMagicBallIfBagContainsOneGreenBall() {
-        Bag bag = new Bag(3, Color.GREEN, 1);
+        Bag bag = new Bag(5, Color.GREEN, 1);
         MagicBall greenMagicBall = new MagicBall(1, Color.GREEN);
         MagicBall redMagicBall1 = new MagicBall(2, Color.RED);
         MagicBall redMagicBall2 = new MagicBall(3, Color.RED);
@@ -54,5 +54,39 @@ class BagTest {
         assertTrue(bag.put(redMagicBall1));
         assertTrue(bag.put(redMagicBall2));
         assertFalse(bag.put(redMagicBall3));
+    }
+
+    @Test
+    void shouldNotPutYellowAtFirstIfBagCapacityIsLessThanThree() {
+        Bag bag = new Bag(1, Color.GREEN, 1);
+        MagicBall yellowMagicBall = new MagicBall(1, Color.YELLOW);
+
+        assertFalse(bag.put(yellowMagicBall));
+    }
+
+    @Test
+    void shouldPutOneYellowIfBagsCurrentBallsCountIsTwo() {
+        Bag bag = new Bag(4, Color.GREEN, 1);
+        MagicBall greenMagicBall = new MagicBall(1, Color.GREEN);
+        MagicBall redMagicBall = new MagicBall(2, Color.RED);
+        MagicBall yellowMagicBall = new MagicBall(3, Color.YELLOW);
+
+        assertTrue(bag.put(greenMagicBall));
+        assertTrue(bag.put(redMagicBall));
+        assertTrue(bag.put(yellowMagicBall));
+    }
+
+    @Test
+    void shouldPutSecondYellowIfBagsCurrentBallsCountIsThree() {
+        Bag bag = new Bag(4, Color.GREEN, 1);
+        MagicBall greenMagicBall = new MagicBall(1, Color.GREEN);
+        MagicBall redMagicBall = new MagicBall(2, Color.RED);
+        MagicBall yellowMagicBall1 = new MagicBall(3, Color.YELLOW);
+        MagicBall yellowMagicBall2 = new MagicBall(4, Color.YELLOW);
+
+        assertTrue(bag.put(greenMagicBall));
+        assertTrue(bag.put(redMagicBall));
+        assertTrue(bag.put(yellowMagicBall1));
+        assertFalse(bag.put(yellowMagicBall2));
     }
 }

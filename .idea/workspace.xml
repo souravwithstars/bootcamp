@@ -71,8 +71,8 @@
       <recent name="com.tw.step8.toss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BagTest.shouldNotPut3rdRedMagicBallIfBagContainsOneGreenBall">
-    <configuration name="BagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BagTest.shouldPutSecondYellowIfBagsCurrentBallsCountIsThree">
+    <configuration name="BagTest.abcd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +82,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="abcd" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldNotPutMagicBallToTheBagIfTheBagsColorLimitIsReached" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldNotPutYellowAtFirstIfBagCapacityIsLessThanThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -113,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldNotPutMagicBallToTheBagIfTheBagsColorLimitIsReached" />
+      <option name="METHOD_NAME" value="shouldNotPutYellowAtFirstIfBagCapacityIsLessThanThree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldNotPutRedMagicBallToTheBagIfBagIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldPutOneYellowIfBagsCurrentBallsCountIsTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -129,13 +130,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldNotPutRedMagicBallToTheBagIfBagIsEmpty" />
+      <option name="METHOD_NAME" value="shouldPutOneYellowIfBagsCurrentBallsCountIsTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldPutMagicBallToTheBag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldPutSecondYellowIfBagsCurrentBallsCountIsThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldPutMagicBallToTheBag" />
+      <option name="METHOD_NAME" value="shouldPutSecondYellowIfBagsCurrentBallsCountIsThree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BagTest.shouldPutSecondYellowIfBagsCurrentBallsCountIsThree" />
+        <item itemvalue="JUnit.BagTest.shouldPutOneYellowIfBagsCurrentBallsCountIsTwo" />
+        <item itemvalue="JUnit.BagTest.shouldNotPutYellowAtFirstIfBagCapacityIsLessThanThree" />
+        <item itemvalue="JUnit.BagTest.abcd" />
         <item itemvalue="JUnit.BagTest.shouldNotPut3rdRedMagicBallIfBagContainsOneGreenBall" />
-        <item itemvalue="JUnit.BagTest" />
-        <item itemvalue="JUnit.BagTest.shouldNotPutRedMagicBallToTheBagIfBagIsEmpty" />
-        <item itemvalue="JUnit.BagTest.shouldNotPutMagicBallToTheBagIfTheBagsColorLimitIsReached" />
-        <item itemvalue="JUnit.BagTest.shouldPutMagicBallToTheBag" />
       </list>
     </recent_temporary>
   </component>
