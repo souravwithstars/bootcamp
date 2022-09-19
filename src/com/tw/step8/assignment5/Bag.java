@@ -27,13 +27,22 @@ public class Bag {
     }
 
     private boolean isColorLimitReached(MagicBall magicBall) {
-        if (magicBall.color != this.color) return true;
+        if (magicBall.color == color.RED) return !this.canAddRedBalls();
 
-        long count = this.balls.stream()
-                .filter(ball -> ball.color == magicBall.color)
+        return countBallsOfColor(magicBall.color) == colorLimit;
+    }
+
+    private boolean canAddRedBalls() {
+        long greenBalls = countBallsOfColor(Color.GREEN);
+        long redBalls = countBallsOfColor(Color.RED);
+
+        return (2 * greenBalls) > redBalls;
+    }
+
+    private long countBallsOfColor(Color color) {
+        return this.balls.stream()
+                .filter(ball -> ball.color == color)
                 .count();
-
-        return count == colorLimit;
     }
 
     private boolean isFull() {
