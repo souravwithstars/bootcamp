@@ -33,7 +33,7 @@ public enum Color {
             return blueBalls == 0;
         }
     },
-    YELLOW(){
+    YELLOW() {
         @Override
         public boolean isAddable(HashSet<MagicBall> balls) {
             long yellowBalls = countBallsOfColor(balls, Color.YELLOW);
@@ -42,6 +42,7 @@ public enum Color {
             return futurePercentageOfYellow <= 40;
         }
     };
+
     Color() {
     }
 

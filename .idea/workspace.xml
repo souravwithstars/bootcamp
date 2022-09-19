@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/MyPredicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/exception/NoSpaceInBagException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Bag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +51,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step8.assignment5.exception" />
       <recent name="com.tw.step8.assignment5" />
       <recent name="com.tw.step8.assignment4" />
       <recent name="com.tw.step8.assignment4.exception" />
       <recent name="com.tw.step8.compare" />
-      <recent name="com.tw.step8.compare.exception" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -119,22 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldPutOneYellowIfBagsCurrentBallsCountIsTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldPutOneYellowIfBagsCurrentBallsCountIsTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BagTest.shouldPutSecondYellowIfBagsCurrentBallsCountIsThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -151,13 +136,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BagTest.shouldThrowNoSpaceInBagExceptionIfTheBagIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
+      <option name="METHOD_NAME" value="shouldThrowNoSpaceInBagExceptionIfTheBagIsFull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BagTest" />
+        <item itemvalue="JUnit.BagTest.shouldThrowNoSpaceInBagExceptionIfTheBagIsFull" />
         <item itemvalue="JUnit.BagTest.shouldNotAddBlackBallIfBagContainsBlueBalls" />
         <item itemvalue="JUnit.BagTest.shouldNotAddBlueBallIfBagContainsBlackBalls" />
         <item itemvalue="JUnit.BagTest.shouldPutSecondYellowIfBagsCurrentBallsCountIsThree" />
-        <item itemvalue="JUnit.BagTest.shouldPutOneYellowIfBagsCurrentBallsCountIsTwo" />
       </list>
     </recent_temporary>
   </component>
