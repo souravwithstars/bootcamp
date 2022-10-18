@@ -10,7 +10,7 @@ class RectangleTest {
   @Test
   void shouldFindAreaOfGivenRectangle() {
     Rectangle rectangle = Rectangle.createRectangle(10, 20);
-    assertEquals(250, rectangle.area());
+    assertEquals(200, rectangle.area());
 
     Rectangle rectangle2 = Rectangle.createRectangle(10.5, 20.5);
     assertEquals(215.25, rectangle2.area());
